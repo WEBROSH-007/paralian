@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from duruthemes.com/demo/html/patara/multipage-light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jun 2025 07:31:39 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Patara - Resort & Spa Hotel</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Outfit:wght@300;400&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Team Section Redesign */
+        .team-custom-row {
+            display: flex;
+            flex-direction: column;
+            gap: 40px 0;
+            margin-bottom: 40px;
+        }
+        .team-col-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-bottom: 0;
+        }
+        .team-col-2 .team-info {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 24px;
+            text-align: left;
+        }
+        .team-col-2 .team-img {
+            flex: 0 0 50%;
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 320px; */
+            /* square aspect for desktop */
+        }
+        .team-col-2 .team-img img {
+            width: 90%;
+            height: 90%;
+            /* object-fit: cover; */
+            border-radius: 0;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .team-col-2 .team-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+        .team-col-2 .team-role {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .team-col-2 .team-desc {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+        .team-col-2.reverse {
+            flex-direction: row-reverse;
+        }
+        .team-custom-row-5 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: space-between;
+        }
+        .team-col-5 {
+            flex: 0 0 19%;
+            max-width: 19%;
+            background: #fafafa;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px 10px 15px 10px;
+            box-sizing: border-box;
+        }
+        .team-col-5 .team-img {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .team-col-5 .team-img img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+        .team-col-5 .team-name-5 {
+            font-size: 1rem;
+            color: #000000;
+            margin-top: 8px;
+        }
+        
+        .team-col-5 .team-role {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 5px;
+            
+        }
+
+        .team-col-5 .team-desc {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        @media (max-width: 991px) {
+            .team-col-2 {
+                flex-direction: column !important;
+                text-align: center;
+            }
+            .team-col-2 .team-info, .team-col-2 .team-img {
+                max-width: 100%;
+                flex: 0 0 100%;
+                padding: 0;
+                height: auto;
+            }
+            .team-col-2 .team-img img {
+                width: 70vw;
+                height: 70vw;
+                max-width: 320px;
+                max-height: 320px;
+            }
+            .team-col-2 .team-img {
+                margin: 0 auto 20px auto;
+            }
+        }
+        @media (max-width: 600px) {
+            .team-col-2 .team-img img {
+                width: 90vw;
+                height: 90vw;
+                max-width: 220px;
+                max-height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/logo1.png" class="logo-img" alt=""> </a>
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="dropdown-item active"><span>Slider 1</span></a></li>
+                            <li><a href="index2.html" class="dropdown-item"><span>Slider 2</span></a></li>
+                            <li><a href="index3.html" class="dropdown-item"><span>Parallax Image 1</span></a></li>
+                            <li><a href="index4.html" class="dropdown-item"><span>Parallax Image 2</span></a></li>
+                            <li><a href="index5.html" class="dropdown-item"><span>Slideshow 1</span></a></li>
+                            <li><a href="index6.html" class="dropdown-item"><span>Slideshow 2</span></a></li>
+                            <li><a href="index7.html" class="dropdown-item"><span>Video 1</span></a></li>
+                            <li><a href="index8.html" class="dropdown-item"><span>Video 2</span></a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Rooms <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="rooms.html" class="dropdown-item"><span>Rooms 1</span></a></li>
+                            <li><a href="rooms2.html" class="dropdown-item"><span>Rooms 2</span></a></li>
+                            <li><a href="rooms3.html" class="dropdown-item"><span>Rooms 3</span></a></li>
+                            <li><a href="rooms4.html" class="dropdown-item"><span>Rooms 4</span></a></li>
+                            <li><a href="rooms5.html" class="dropdown-item"><span>Rooms 5</span></a></li>
+                            <li><a href="rooms6.html" class="dropdown-item"><span>Rooms 6</span></a></li>
+                            <li><a href="rooms7.html" class="dropdown-item"><span>Rooms 7</span></a></li>
+                            <li><a href="room-details.html" class="dropdown-item"><span>Room Details 1</span></a></li>
+                            <li><a href="room-details2.html" class="dropdown-item"><span>Rooms Details 2</span></a></li><li><a href="room-details3.html" class="dropdown-item"><span>Rooms Details 3</span></a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Services <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html" class="dropdown-item"><span>Services 1</span></a></li>
+                            <li><a href="services2.html" class="dropdown-item"><span>Services 2</span></a></li>
+                            <li><a href="services3.html" class="dropdown-item"><span>Services 3</span></a></li>
+                            <li><a href="services4.html" class="dropdown-item"><span>Services 4</span></a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="restaurant.html">Restaurant</a></li> -->
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="amenities.html" class="dropdown-item"><span>Amenities</span></a></li>
+                            <li><a href="spa-wellness.html" class="dropdown-item"><span>Spa & Wellness</span></a></li>
+                            <li><a href="gallery-image.html" class="dropdown-item"><span>Image Gallery</span></a></li>
+                            <li><a href="gallery-video.html" class="dropdown-item"><span>Video Gallery</span></a></li>
+                            <li><a href="pricing.html" class="dropdown-item"><span>Pricing</span></a></li>
+                            <li><a href="team.html" class="dropdown-item"><span>Team</span></a></li>
+                            <li><a href="faq.html" class="dropdown-item"><span>Faq</span></a></li>
+                            <li class="dropdown-submenu dropdown"> <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages <i class="ti-angle-right"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="404.html" class="dropdown-item"><span>404 Page</span></a></li>
+                                    <li><a href="coming-soon.html" class="dropdown-item"><span>Coming Soon</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html" class="dropdown-item"><span>Blog 1</span></a></li>
+                            <li><a href="blog2.html" class="dropdown-item"><span>Blog 2</span></a></li>
+                            <li><a href="post.html" class="dropdown-item"><span>Post Page</span></a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="4" data-background="img/8-.jpeg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 caption text-center">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </div>
+        <!-- button scroll -->
+        <a href="#" data-scroll-nav="1" class="mouse smoothscroll"> <span class="mouse-icon">
+                <span class="mouse-wheel"></span> </span>
+        </a>
+    </div>
+    <!-- About -->
+    <section class="about section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sub-title border-bot-light">Welcome to</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="section-title">Paralian, a maritime haven
+
+</div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <p>Founded in 2022 with the creation of our flagship project 11-11, The Paralian was built on a simple vision: to craft properties that are as comfortable as they are beautiful. Since then, we’ve expanded into full-scale villa development and property sales, with projects like The Waits Estates, a collection of community designed villas in Uluwatu. This Community is like nothing yo’uve ever seen before with padel courts, 24 hour security and community pools.</p>
+                            <p>In 2026, we’ll launch our own Property Management Group, providing end-to-end service and long-term peace of mind for owners.</p>
+                            <p>From sales to architecture, from design to delivery, our in-house team brings expertise across every stage of development, ensuring exceptional quality, comfort, and execution.</p>
+                            <!-- Rating -->
+                            <!-- <div class="ratting-point mt-30 mb-30">
+                                <div class="features-ratting">
+                                    <h3>4.9</h3>
+                                </div>
+                                <div class="features-caption">
+                                    <h3>Rating based on 2500+ reviews</h3>
+                                    <div class="rating"> <span>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                            <i class="star-rating"></i>
+                                        </span> </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="row g-3">
+                                <div class="col-6 text-end"> <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/1.png" style="margin-top: 25%;"> </div>
+                                <div class="col-6 text-start"> <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/2.png"> </div>
+                                <div class="col-6 text-end"> <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/3.png"> </div>
+                                <div class="col-6 text-start"> <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/4.png"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Video -->
+    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="img/ROOFTOP_100625.jpeg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 text-center"> 
+                   <span><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></span>
+                    <div class="section-subtitle"><span>THE PARALIAN</span></div>
+                    <div class="section-title"><span>Jesse Waits: From Las Vegas Nights to Bali Real Estate</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center col-md-12">
+                    <a class="vid" href="https://www.youtube.com/watch?v=DAwSpGEYCpo">
+                        <div class="vid-butn"> <span class="icon">
+                                <i class="ti-control-play"></i>
+                            </span> </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <section class="team section-padding">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-md-3">
+                    <div class="sub-title border-bot-light">Our</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="section-title">Team</div>
+                </div>
+            </div>
+            <!-- First row: 2 team members -->
+            <div class="team-custom-row">
+                <div class="team-col-2">
+                    <div class="team-info">
+                        <div class="team-name">Jesse Waits</div>
+                        <div class="team-role">Founder</div>
+                        <div class="team-desc">Drawing upon more than 21 years of seasoned expertise within the hospitality domain of esteemed high-profile establishments, Jesse Waits, renowned owner and founder, has solidified his position as a prominent figure in the realms of Las Vegas and Los Angeles entertainment and hospitality industries. His career stands out for his commitment to curate unique guest experiences that blend operational excellence with creative strategy and business savvy, thereby redefining hospitality standards  <br/> <br/>
+                            His roles have included, Managing Partner at Wynn Resort Nightlife, where he worked closely with Steve Wynn for a decade. He further honed his skills as the Chief Experience Officer and Partner at Alon resorts and as the Chief Experience Officer & SVP at Red Rock Resorts, where he oversaw 29 casinos alongside Lorenzo Fertitta. Additionally, Jesse has lent his expertise to consulting for the 2022 World Cup in Qatar.</div>
+                        
+                    </div>
+                    <div class="team-img"><img src="img/jesse.webp" alt="Daniel Arman"></div>
+                </div>
+                <div class="team-col-2 reverse">
+                    <div class="team-info">
+                        <div class="team-name">Gabriel Waits</div>
+                        <div class="team-role">Chief Operation Officer (COO)</div>
+                        <div class="team-desc">As the partner and wellness architect of the 11•11 brand, Gabriel Waits has ventured into real estate development with a zeal for transforming spaces and creating impactful communities. At the helm of the wellness aspect of 11•11, Gabriel draws on his extensive knowledge, including a Bachelor’s degree in Kinesiology and NASM certifications in Personal Training and Nutrition Coaching. <br/> <br/>
+                            His holistic approach and deep understanding of physical health span an array of disciplines, from anatomy and physiology to biomechanics, nutrition, exercise and program design, prevention and care of sports injuries, psychology of sports and fitness, fitness and wellness strategies, as well as exercise physiology. Additionally, Gabriel’s diverse experience in marketing, firefighting, and first-aid instruction endows him with a multifaceted skill set.</div>
+                    </div>
+                    <div class="team-img"><img src="img/gabriel.webp" alt="Rebecca Dan"></div>
+                </div>
+            </div>
+            <!-- Second row: 5 team members -->
+            <!-- <div class="team-custom-row-5">
+                <div class="team-col-5">
+                    <div class="team-img"><img src="img/team/b.jpg" alt="Cate Blanche"></div>
+                    <div class="team-name-5">Alena Setunova</div>
+                    <div class="team-role">Co-Creative</div>
+                    <div class="team-desc">Cate keeps the hotel running smoothly behind the scenes with her expert organizational skills.</div>
+                </div>
+                <div class="team-col-5">
+                    <div class="team-img"><img src="img/team/d.jpg" alt="John Smith"></div>
+                    <div class="team-name-5">Administrator</div>
+                    <div class="team-role">Chef</div>
+                    <div class="team-desc">John crafts delicious meals and oversees the kitchen with creativity and passion.</div>
+                </div>
+                <div class="team-col-5">
+                    <div class="team-img"><img src="img/team/e.jpg" alt="Lisa Ray"></div>
+                    <div class="team-name-5">Administrator</div>
+                    <div class="team-role">Housekeeping</div>
+                    <div class="team-desc">Lisa ensures every room is spotless and comfortable for our guests.</div>
+                </div>
+                <div class="team-col-5">
+                    <div class="team-img"><img src="img/team/f.jpg" alt="Mike Lee"></div>
+                    <div class="team-name-5">Administrator</div>
+                    <div class="team-role">Concierge</div>
+                    <div class="team-desc">Mike helps guests with local tips and special requests, making every stay unique.</div>
+                </div>
+                <div class="team-col-5">
+                    <div class="team-img"><img src="img/team/g.jpg" alt="Sara Kim"></div>
+                    <div class="team-name-5">Administrator</div>
+                    <div class="team-role">Event Manager</div>
+                    <div class="team-desc">Sara organizes events and conferences, ensuring every occasion is a success.</div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Booking Search -->
+    <!-- <section class="section-padding bg-img bg-fixed" data-overlay-dark="3" data-background="img/rooms/18.jpg">
+        <div class="container">
+            <div class="booking-inner clearfix">
+                <form action="#" class="form1 clearfix">
+                    <div class="col1 c1">
+                        <div class="input1_wrapper border-l border-b border-t border-r">
+                            <label>Check in</label>
+                            <div class="input1_inner">
+                                <input type="text" class="form-control input datepicker" placeholder="Check in">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col1 c2">
+                        <div class="input1_wrapper border-l border-b border-t border-r">
+                            <label>Check out</label>
+                            <div class="input1_inner">
+                                <input type="text" class="form-control input datepicker" placeholder="Check out">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2 c3">
+                        <div class="select1_wrapper border-l border-b border-t border-r">
+                            <label>Adults</label>
+                            <div class="select1_inner">
+                                <select class="select2 select" style="width: 100%">
+                                    <option value="1">1 Adult</option>
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2 c4">
+                        <div class="select1_wrapper border-l border-b border-t border-r">
+                            <label>Children</label>
+                            <div class="select1_inner">
+                                <select class="select2 select" style="width: 100%">
+                                    <option value="1">Children</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                    <option value="3">3 Children</option>
+                                    <option value="4">4 Children</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2 c5">
+                        <div class="select1_wrapper border-l border-b border-t border-r">
+                            <label>Rooms</label>
+                            <div class="select1_inner">
+                                <select class="select2 select" style="width: 100%">
+                                    <option value="1">1 Room</option>
+                                    <option value="2">2 Rooms</option>
+                                    <option value="3">3 Rooms</option>
+                                    <option value="4">4 Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col3 c6">
+                        <button type="submit" class="btn-form1-submit">Check Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <!-- Amenities -->
+    <!-- <section class="amenities section-padding">
+        <div class="container">
+            <div class="row mb-30">
+                <div class="col-md-3">
+                    <div class="sub-title border-bot-light">Our Services</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="section-title">Hotel Amenities</div>
+                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"> <span class="number">01</span>
+                            <div class="icon"><i class="flaticon-world"></i></div>
+                            <h5><a href="#">Pick Up &amp; Drop</a></h5>
+                            <p>We'll pick up from airport while you comfy on your ride, mus nellentes.</p>
+                        </div>
+                        <div class="item"> <span class="number">02</span>
+                            <div class="icon"><i class="flaticon-car"></i></div>
+                            <h5><a href="#">Parking Space</a></h5>
+                            <p>Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+                        </div>
+                        <div class="item"> <span class="number">03</span>
+                            <div class="icon"><i class="flaticon-bed"></i></div>
+                            <h5><a href="#">Room Service</a></h5>
+                            <p>Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+                        </div>
+                        <div class="item"> <span class="number">04</span>
+                            <div class="icon"><i class="flaticon-swimming"></i></div>
+                            <h5><a href="#">Swimming Pool</a></h5>
+                            <p>Swimming pool tincidunt nise ace the park norttito sit space mus miss.</p>
+                        </div>
+                        <div class="item"> <span class="number">05</span>
+                            <div class="icon"><i class="flaticon-wifi"></i></div>
+                            <h5><a href="#">Fibre Internet</a></h5>
+                            <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
+                        </div>
+                        <div class="item"> <span class="number">06</span>
+                            <div class="icon"><i class="flaticon-breakfast"></i></div>
+                            <h5><a href="#">Breakfast</a></h5>
+                            <p>Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Clients -->
+    <!-- <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/1.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/2.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/3.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/4.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/5.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-30">
+                        <div class="sub-title border-footer-light whte">Contact Us!</div>
+                    </div>
+                    <div class="col-md-4 offset-md-1">
+                        <div class="item">
+                            <h3>Get in touch</h3>
+                            <p>1616 Broadway NY, New York 10001
+                                <br>United States of America.
+                            </p>
+                            <p class="phone">+1 203 123 0606</p>
+                            <p class="mail">info@hotel.com</p>
+                            <div class="social mt-2"> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-linkedin"></i></a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <h3>Rooms & Suites</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="rooms.html">Junior Room</a></li>
+                                <li><a href="rooms.html">Family Room</a></li>
+                                <li><a href="rooms.html">Double Room</a></li>
+                                <li><a href="rooms.html">Deluxe Room</a></li>
+                                <li><a href="rooms.html">Superior Room</a></li>
+                                <li><a href="rooms.html">King Suite</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <p>© 2025 PATARA - Resort & Spa Hotel. All right reserved.</p>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <p class="right"><a href="#">Terms &amp; Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+<!-- Mirrored from duruthemes.com/demo/html/patara/multipage-light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jun 2025 07:31:42 GMT -->
+</html>
