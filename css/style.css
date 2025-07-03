@@ -50,6 +50,7 @@
  47. toTop Button style
  48. Overlay Effect Bg image style
  49. Responsive (Media Query)
+ 50. link style
  
 
 ------------------------------------------------------- */
@@ -5219,13 +5220,13 @@ font-size: 15px;
 }
 .butn-light a {
     font-weight: 300;
-    background: transparent;
-    color: #fff;
+    background: trasparent;
+    color: #000;
     padding: 15px 20px;
     margin: 0;
     position: relative;
     font-size: 12px;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(15, 4, 4, 0.5);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -5528,7 +5529,7 @@ font-size: 15px;
     color: #aa8453;
 }
 .footer .top .item h3 span {
-    color: #fff;
+    color: #121010;
 }
 .footer .top .item p {
     margin-bottom: 15px;
@@ -5970,3 +5971,64 @@ font-size: 15px;
         font-size: 30px;
     }
 }
+
+
+/* link style */
+.butn-light-custom {
+    background: #f8f9fa;
+    border: 2px solid #333;
+    display: flex;
+    padding: 10px 25px;
+    text-align: center;
+    width: fit-content;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .butn-light-custom span {
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .butn-light-custom:hover {
+    background-color: #333;
+  }
+  
+  .butn-light-custom:hover span {
+    color: #fff;
+  }
+
+  /* 11-11 bali link */
+  .custom-link {
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .custom-link:hover {
+    color: #0056b3;
+  }
+  
+
+  /* team member css */
+  .team-alt-row {
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.team-alt-row:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+
