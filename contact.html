@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Outfit:wght@300;400&amp;display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome CDN for TikTok icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
       .owl-theme .owl-nav.disabled + .owl-dots{
         display: none !important;
@@ -27,6 +29,69 @@
       }
       .rooms3:hover .butn-light {
         opacity: 1;
+      }
+      /* Make reservation, email, and address boxes the same size and style */
+      .reservations.mb-15 {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        background: #f8f5f0;
+        border-radius: 10px;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      }
+      .reservations.mb-15 .icon {
+        margin-right: 16px;
+        font-size: 2rem;
+        color: #bfa16a;
+      }
+      .reservations.mb-15 .text {
+        flex: 1;
+      }
+      @media (max-width: 767px) {
+        .reservations.mb-15 {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px 10px;
+        }
+        .reservations.mb-15 .icon {
+          margin-bottom: 8px;
+          margin-right: 0;
+        }
+      }
+      /* Make all three contact info boxes the same height */
+      .contact .row.mb-30 > .col-lg-4 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .reservations.mb-15 {
+        flex: 1 1 auto;
+        min-height: 180px; /* Adjust this value to match the tallest box visually */
+        display: flex;
+        align-items: center;
+        background: #f8f5f0;
+        border-radius: 10px;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      }
+      .reservations.mb-15 .icon {
+        margin-right: 16px;
+        font-size: 2rem;
+        color: #bfa16a;
+      }
+      .reservations.mb-15 .text {
+        flex: 1;
+      }
+      @media (max-width: 991px) {
+        .contact .row.mb-30 > .col-lg-4 {
+          height: auto;
+        }
+        .reservations.mb-15 {
+          min-height: 120px;
+        }
       }
     </style>
 </head>
@@ -127,7 +192,7 @@
     </nav>
     <!-- VIDEO -->
    <!-- Header Banner -->
-   <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="img/restaurant/2.jpg">
+   <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="img/main/contact.jpg">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center caption">
@@ -824,10 +889,12 @@
                             </p>
                             <p class="phone">+62 821 4608 3360</p>
                             <p class="mail">hello@theparalian.com</p>
-                            <div class="social mt-2">
-                                <a href="index.html"><i class="ti-twitter"></i></a>
-                                <a href="index.html"><i class="ti-instagram"></i></a>
-                                <a href="index.html"><i class="ti-linkedin"></i></a>
+                            <div class="social mt-2 d-flex align-items-center">
+                                <!-- <a href="index.html"><i class="ti-twitter"></i></a> -->
+                                <a href="https://www.facebook.com/share/1CSH5pnNQp/?mibextid=wwXIfr"><i class="ti-facebook"></i></a>
+                                <a href="https://www.tiktok.com/@paralian.uluwatu"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/paralian.uluwatu/?hl=en"><i class="ti-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/the-paralian-uluwatu"><i class="ti-linkedin"></i></a>
                             </div>
                         </div>
                     </div>

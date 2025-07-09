@@ -28,7 +28,27 @@
       .rooms3:hover .butn-light {
         opacity: 1;
       }
+      /* Add spacing between gallery tab buttons */
+      #galleryTab .nav-link {
+        margin-right: 40px;
+        transition: background 0.2s, color 0.2s;
+      }
+      #galleryTab .nav-link:last-child {
+        margin-right: 0;
+      }
+      /* Theme-matching hover effect for tab buttons */
+      #galleryTab .nav-link:hover, #galleryTab .nav-link:focus {
+        background: #bfa16a; /* gold-brown accent from your theme */
+        color: #fff;
+      }
+      #galleryTab .nav-link.active {
+        background: #bfa16a;
+        color: #fff;
+        border-color: #bfa16a #bfa16a #fff;
+      }
     </style>
+    <!-- Font Awesome CDN for TikTok icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <!-- Preloader -->
@@ -127,7 +147,7 @@
     </nav>
     <!-- VIDEO -->
    <!-- Header Banner -->
-   <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="img/restaurant/2.jpg">
+   <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="img/project.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center caption">
@@ -195,76 +215,213 @@
 <!-- tabs section -->
  
 
-<!-- Image Gallery -->
+<!-- Image Gallery with Tabs -->
 <section class="section-padding" data-scroll-index="1">
     <div class="container">
-        <div class="row">
-            <!-- 3 columns -->
-            <div class="col-md-4 gallery-item">
-                <div class="img-card">
-                    <a href="img/11-1.webp" title="" class="img-zoom">
+        <!-- Tab Bar -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="galleryTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-a" data-bs-toggle="tab" data-bs-target="#gallery-a" type="button" role="tab" aria-controls="gallery-a" aria-selected="true">A</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-b" data-bs-toggle="tab" data-bs-target="#gallery-b" type="button" role="tab" aria-controls="gallery-b" aria-selected="false">B</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-c" data-bs-toggle="tab" data-bs-target="#gallery-c" type="button" role="tab" aria-controls="gallery-c" aria-selected="false">C</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-d" data-bs-toggle="tab" data-bs-target="#gallery-d" type="button" role="tab" aria-controls="gallery-d" aria-selected="false">D</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-e" data-bs-toggle="tab" data-bs-target="#gallery-e" type="button" role="tab" aria-controls="gallery-e" aria-selected="false">E</button>
+            </li>
+        </ul>
+        <!-- Tab Content -->
+        <div class="tab-content" id="galleryTabContent">
+            <!-- Tab A -->
+            <div class="tab-pane fade show active" id="gallery-a" role="tabpanel" aria-labelledby="tab-a">
+                <div class="row">
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-01.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-01.jpg" class="img-fluid mx-auto d-block" alt="A1"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-02.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-02.jpg" class="img-fluid mx-auto d-block" alt="A2"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-03.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-03.jpg" class="img-fluid mx-auto d-block" alt="A3"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-04.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-04.jpg" class="img-fluid mx-auto d-block" alt="A4"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-05.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-05.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-06.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-06.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-07.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-07.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-08.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-08.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typea/typea-09.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-09.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typea/typea-10.jpg" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/gallery/Image84.png" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/gallery/Image85.png" class="img-fluid mx-auto d-block" alt="A5"></div></div></a></div></div> -->
 
-                        <div class="img-block">
-                            <div class="wrapper-img"> <img src="img/11-2.webp" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            <div class="title-block">
-                                <h6>11-11 Bali</h6>
-                            </div>
-                        </div>
-                    </a>
+                
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
-                <div class="img-card">
-                    <a href="img/rooms/12.jpg" title="" class="img-zoom">
-                        <div class="img-block">
-                            <div class="wrapper-img"> <img src="img/rooms/12.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            <div class="title-block">
-                                <h6>Waits Estate Villas</h6>
-                            </div>
-                        </div>
-                    </a>
+            <!-- Tab B -->
+            <div class="tab-pane fade" id="gallery-b" role="tabpanel" aria-labelledby="tab-b">
+                <div class="row">
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-01.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-01.jpg" class="img-fluid mx-auto d-block" alt="B1"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-02.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-02.jpg" class="img-fluid mx-auto d-block" alt="B2"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-03.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-03.jpg" class="img-fluid mx-auto d-block" alt="B3"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-04.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-04.jpg" class="img-fluid mx-auto d-block" alt="B4"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-05.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-05.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-06.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-06.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-06.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div> -->
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-07.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-07.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-08.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-08.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-09.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-09.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-10.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-10.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-11.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-11.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-12.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-12.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-13.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-13.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-14.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-14.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-15.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-15.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-16.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-16.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-17.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-17.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-18.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typeb/images-19.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/images-19.jpg" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typeb/Image99.png" class="img-fluid mx-auto d-block" alt="B5"></div></div></a></div></div> -->
+
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
-                <div class="img-card">
-                    <a href="img/rooms/15.jpg" title="" class="img-zoom">
-                        <div class="img-block">
-                            <div class="wrapper-img"> <img src="img/rooms/15.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            <div class="title-block">
-                                <h6>Grand Waits Estate Villa</h6>
-                            </div>
-                        </div>
-                    </a>
+            <!-- Tab C -->
+            <div class="tab-pane fade" id="gallery-c" role="tabpanel" aria-labelledby="tab-c">
+                <div class="row">
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-01.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-01.jpg" class="img-fluid mx-auto d-block" alt="C1"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-02.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-02.jpg" class="img-fluid mx-auto d-block" alt="C2"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-03.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-03.jpg" class="img-fluid mx-auto d-block" alt="C3"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-04.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-04.jpg" class="img-fluid mx-auto d-block" alt="C4"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-05.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-05.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-06.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-06.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-07.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-07.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-11.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-11.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-08.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-08.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-09.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-09.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-10.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-10.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-12.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-12.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-13.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-13.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-14.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-14.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-15.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-15.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-16.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-16.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-17.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-17.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-18.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-19.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-19.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-20.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-20.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-21.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-21.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-22.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-22.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-23.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-23.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-24.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-24.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-25.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-25.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-26.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-26.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-27.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-27.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-28.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-28.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-29.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-29.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typec/type c-30.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/type c-30.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image49PP.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image51PP.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image53PP.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image55PP.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image56.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image57 (1).png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image59 (1).png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image60 (2).png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image64 (1).png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image66PP.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image73 (1).png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typec/Image74.png" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div> -->
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="C5"></div></div></a></div></div> -->
+
                 </div>
             </div>
-            <!-- 2 columns -->
-            <div class="col-md-6 gallery-item">
-                <div class="img-card">
-                    <a href="img/rooms/17.jpg" title="" class="img-zoom">
-                        <div class="img-block">
-                            <div class="wrapper-img"> <img src="img/rooms/17.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            <div class="title-block">
-                                <h6>Deluxe Room</h6>
-                            </div>
-                        </div>
-                    </a>
+            <!-- Tab D -->
+            <div class="tab-pane fade" id="gallery-d" role="tabpanel" aria-labelledby="tab-d">
+                <div class="row">
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-01.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-01.jpg" class="img-fluid mx-auto d-block" alt="D1"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-02.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-02.jpg" class="img-fluid mx-auto d-block" alt="D2"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-03.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-03.jpg" class="img-fluid mx-auto d-block" alt="D3"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-04.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-04.jpg" class="img-fluid mx-auto d-block" alt="D4"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-05.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-05.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-06.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-06.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-07.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-07.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-08.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-08.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-09.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-09.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-10.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-10.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-11.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-11.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-12.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-12.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-13.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-13.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-14.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-14.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-15.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-15.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-16.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-16.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-17.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-17.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typed/type d-18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/type d-18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/Image86 (1).png" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/Image87 (1).png" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typed/Image88 (1).png" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div> -->
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="D5"></div></div></a></div></div> -->
+
                 </div>
             </div>
-            <div class="col-md-6 gallery-item">
-                <div class="img-card">
-                    <a href="img/rooms/18.jpg" title="" class="img-zoom">
-                        <div class="img-block">
-                            <div class="wrapper-img"> <img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                            <div class="title-block">
-                                <h6>Superior Room</h6>
-                            </div>
-                        </div>
-                    </a>
+            <!-- Tab E -->
+            <div class="tab-pane fade" id="gallery-e" role="tabpanel" aria-labelledby="tab-e">
+                <div class="row">
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-01.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-01.jpg" class="img-fluid mx-auto d-block" alt="E1"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-02.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-02.jpg" class="img-fluid mx-auto d-block" alt="E2"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-03.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-03.jpg" class="img-fluid mx-auto d-block" alt="E3"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-04.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-04.jpg" class="img-fluid mx-auto d-block" alt="E4"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-05.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-05.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-06.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-06.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-07.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-07.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-08.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-08.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-09.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-09.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-10.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-10.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-11.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-11.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-12.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-12.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-13.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-13.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-14.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-14.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-15.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-15.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-16.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-16.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-17.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-17.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/typee/type e-18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-18.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <!-- <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/typee/type e-19.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div>
+                    <div class="col-md-4 gallery-item"><div class="img-card"><a href="#" class="img-enlarge" data-img="img/rooms/18.jpg"><div class="img-block"><div class="wrapper-img"><img src="img/rooms/18.jpg" class="img-fluid mx-auto d-block" alt="E5"></div></div></a></div></div> -->
+
                 </div>
             </div>
         </div>
     </div>
+    <!-- Modal for Enlarged Image -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0 text-center">
+            <img id="modalImg" src="" class="img-fluid rounded shadow" alt="Enlarged Image">
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
+<script>
+  // Image enlarge modal logic
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('imgModal');
+    var modalImg = document.getElementById('modalImg');
+    document.querySelectorAll('.img-enlarge').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var imgSrc = this.getAttribute('data-img');
+        modalImg.src = imgSrc;
+        var bsModal = new bootstrap.Modal(modal);
+        bsModal.show();
+      });
+    });
+  });
+</script>
+<!-- End Image Gallery with Tabs -->
 
 <!-- Contact -->
 <!-- <section class="contact section-padding" data-scroll-index="1">
@@ -604,8 +761,7 @@
                         <div class="section-title whte">Every Space Should Feel Like Home
                            
                            </div>
-                        <div class="testimonials-box">
-                            <div class= owl-theme">
+                        <div class= owl-theme">
                                 <div class="item">  -->
                                     <!-- <span>
                                         <i class="star-rating"></i>
@@ -891,10 +1047,12 @@
                             </p>
                             <p class="phone">+62 821 4608 3360</p>
                             <p class="mail">hello@theparalian.com</p>
-                            <div class="social mt-2">
-                                <a href="index.html"><i class="ti-twitter"></i></a>
-                                <a href="index.html"><i class="ti-instagram"></i></a>
-                                <a href="index.html"><i class="ti-linkedin"></i></a>
+                            <div class="social mt-2 d-flex align-items-center">
+                                <!-- <a href="index.html"><i class="ti-twitter"></i></a> -->
+                                <a href="https://www.facebook.com/share/1CSH5pnNQp/?mibextid=wwXIfr"><i class="ti-facebook"></i></a>
+                                <a href="https://www.tiktok.com/@paralian.uluwatu"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/paralian.uluwatu/?hl=en"><i class="ti-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/the-paralian-uluwatu"><i class="ti-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
