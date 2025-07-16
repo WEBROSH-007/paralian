@@ -46,6 +46,20 @@
         color: #fff;
         border-color: #bfa16a #bfa16a #fff;
       }
+      #galleryTab .nav-link.black {
+        background: #3b3b3b !important;
+        color: #fff !important;
+        border-color: #3b3b3b #3b3b3b #fff !important;
+      }
+      #galleryTab .nav-link .tab-letter {
+        color: #3b3b3b !important;
+        transition: color 0.2s;
+      }
+      #galleryTab .nav-link.active .tab-letter,
+      #galleryTab .nav-link:hover .tab-letter,
+      #galleryTab .nav-link:focus .tab-letter {
+        color: #fff !important;
+      }
     </style>
     <!-- Font Awesome CDN for TikTok icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -181,7 +195,7 @@
                     <figure><img src="img/waits.webp" alt="" class="img-fluid"></figure>
                     <div class="caption padding-left">
                         <h4><a href="spa-wellness.html">Waits Estate Villas</a></h4>
-                        <p>An exclusive, guard-gated community Set in the serene beauty of Uluwatu, overlooking the ocean. Combining modern elegance with the islands tranquility, Waits Estate Villas & townhouses offers an unparalleled lifestyle in one of the world’s most sought-after destinations.</p>
+                        <p>An exclusive, guard-gated community Set in the serene beauty of Uluwatu, overlooking the ocean. Combining modern elegance with the islands tranquility, Waits Estate Villas & townhouses offers an unparalleled lifestyle in one of the world's most sought-after destinations.</p>
                         <div class="info-wrapper mt-20">
                             <div class="butn-dark"> <a href="waitsestate.html"><span>Explore More</span></a> </div>
                         </div>
@@ -191,7 +205,7 @@
                     <figure><img src="img/14are.webp" alt="" class="img-fluid"></figure>
                     <div class="caption padding-left">
                         <h4><a href="spa-wellness.html">Grand Waits Estate Villa</a></h4>
-                        <p>Nestled in the prestigious cliffs of Uluwatu, the Grand Waits Estate Villa offers an unparalleled blend of elegance, innovation, and comfort. Spanning an impressive 750 m², this architectural masterpiece is designed for those who seek a refined lifestyle in one of Bali’s most breathtaking locations.</p>
+                        <p>Nestled in the prestigious cliffs of Uluwatu, the Grand Waits Estate Villa offers an unparalleled blend of elegance, innovation, and comfort. Spanning an impressive 750 m², this architectural masterpiece is designed for those who seek a refined lifestyle in one of Bali's most breathtaking locations.</p>
                         <div class="info-wrapper mt-20">
                             <div class="butn-dark"> <a href="14areland.html"><span>Explore More</span></a> </div>
                         </div>
@@ -201,7 +215,7 @@
                     <figure><img src="img/85are.webp" alt="" class="img-fluid"></figure>
                     <div class="caption padding-left">
                         <h4><a href="spa-wellness.html">85 Are Land (Swarga Loka)</a></h4>
-                        <p>Embrace the enchanting beauty of the island as you explore the potential of 85 sprawling Are of pristine land, meticulously divided into individual plots ranging from 294m2 to 1030m2. Nestled in the heart of Uluwatu, renowned for its breathtaking cliffs, white sandy beaches, and vibrant culture, this is an unparalleled chance to own a slice of Bali’s allure.</p>
+                        <p>Embrace the enchanting beauty of the island as you explore the potential of 85 sprawling Are of pristine land, meticulously divided into individual plots ranging from 294m2 to 1030m2. Nestled in the heart of Uluwatu, renowned for its breathtaking cliffs, white sandy beaches, and vibrant culture, this is an unparalleled chance to own a slice of Bali's allure.</p>
                         <div class="info-wrapper mt-20">
                             <div class="butn-dark"> <a href="85areland.html"><span>Explore More</span></a> </div>
                         </div>
@@ -221,19 +235,19 @@
         <!-- Tab Bar -->
         <ul class="nav nav-tabs justify-content-center mb-4" id="galleryTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="tab-a" data-bs-toggle="tab" data-bs-target="#gallery-a" type="button" role="tab" aria-controls="gallery-a" aria-selected="true">A</button>
+                <button class="nav-link active" id="tab-a" data-bs-toggle="tab" data-bs-target="#gallery-a" type="button" role="tab" aria-controls="gallery-a" aria-selected="true"><span class="tab-letter">A</span></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-b" data-bs-toggle="tab" data-bs-target="#gallery-b" type="button" role="tab" aria-controls="gallery-b" aria-selected="false">B</button>
+                <button class="nav-link" id="tab-b" data-bs-toggle="tab" data-bs-target="#gallery-b" type="button" role="tab" aria-controls="gallery-b" aria-selected="false"><span class="tab-letter">B</span></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-c" data-bs-toggle="tab" data-bs-target="#gallery-c" type="button" role="tab" aria-controls="gallery-c" aria-selected="false">C</button>
+                <button class="nav-link" id="tab-c" data-bs-toggle="tab" data-bs-target="#gallery-c" type="button" role="tab" aria-controls="gallery-c" aria-selected="false"><span class="tab-letter">C</span></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-d" data-bs-toggle="tab" data-bs-target="#gallery-d" type="button" role="tab" aria-controls="gallery-d" aria-selected="false">D</button>
+                <button class="nav-link" id="tab-d" data-bs-toggle="tab" data-bs-target="#gallery-d" type="button" role="tab" aria-controls="gallery-d" aria-selected="false"><span class="tab-letter">D</span></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tab-e" data-bs-toggle="tab" data-bs-target="#gallery-e" type="button" role="tab" aria-controls="gallery-e" aria-selected="false">E</button>
+                <button class="nav-link" id="tab-e" data-bs-toggle="tab" data-bs-target="#gallery-e" type="button" role="tab" aria-controls="gallery-e" aria-selected="false"><span class="tab-letter">E</span></button>
             </li>
         </ul>
         <!-- Tab Content -->
