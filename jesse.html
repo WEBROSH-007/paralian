@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Mirrored from duruthemes.com/demo/html/patara/multipage-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jun 2025 07:30:59 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>The Paralian</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Outfit:wght@300;400&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome CDN for TikTok icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+      .owl-theme .owl-nav.disabled + .owl-dots{
+        display: none !important;
+      }
+      .rooms3 .butn-light {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        position: absolute;
+        left: 0; right: 0; bottom: 40px; /* adjust as needed */
+        z-index: 10;
+      }
+      .rooms3:hover .butn-light {
+        opacity: 1;
+      }
+      .article-row {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 18px; /* reduced from 40px */
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+      }
+      .article-row:hover {
+        box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+      }
+      .article-col-title {
+        flex: 1 1 0;
+        background: #f7f5f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #7a5c2e;
+        border-right: 1px solid #eee;
+        min-width: 120px;
+        padding: 24px 12px;
+      }
+      .article-col-content {
+        flex: 2 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px 24px 24px 24px;
+      }
+      .article-col-content .section-title {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #3a2c13;
+      }
+      .article-col-content p {
+        margin-bottom: 0;
+        color: #444;
+        font-size: 1.05rem;
+      }
+      .article-col-image {
+        flex: 1 1 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f5f2;
+        min-width: 160px;
+        padding: 0 12px;
+      }
+      .article-col-image img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+      .article-col-image img:hover {
+        transform: scale(1.05) rotate(-2deg);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      }
+      .read-more-link {
+        display: inline-block;
+        margin-top: 14px;
+        font-weight: bold;
+        color: #7a5c2e;
+        text-decoration: none;
+        font-size: 1.08rem;
+        letter-spacing: 0.5px;
+        transition: color 0.2s, text-decoration 0.2s;
+        cursor: pointer;
+      }
+      .read-more-link:hover {
+        color: #3a2c13;
+        text-decoration: underline;
+      }
+      .section-padding {
+        padding: 36px 0; /* reduced from default (likely 60px or more) */
+      }
+      @media (max-width: 991px) {
+        .article-row {
+          flex-direction: column;
+          box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+          margin-bottom: 14px; /* reduce further on mobile */
+        }
+        .article-col-title, .article-col-content, .article-col-image {
+          border-right: none;
+          border-bottom: 1px solid #eee;
+          min-width: 0;
+          padding: 18px 10px;
+        }
+        .article-col-image {
+          border-bottom: none;
+          padding-bottom: 18px;
+        }
+        .section-padding {
+          padding: 22px 0;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/logo1.png" class="logo-img" alt=""> </a>
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ourteam.html">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- VIDEO -->
+   <!-- Header Banner -->
+   <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="img/team/jesse3.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center caption">
+                <h1>Jesse Waits</h1>
+            </div>
+        </div>
+    </div>
+    <!-- button scroll -->
+    <!-- <a href="#" data-scroll-nav="1" class="mouse smoothscroll"> <span class="mouse-icon">
+            <span class="mouse-wheel"></span> </span>
+    </a> -->
+</div>
+
+<!-- Main Content Placeholder -->
+<!-- Article Section 1 -->
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="article-row">
+      <div class="article-col-title">
+        Article
+      </div>
+      <div class="article-col-content">
+        <div class="section-title">The Journey Begins</div>
+        <p>Interview with 11:11 Founder and Entrepreneur Jesse Waits.....</p>
+        <a href="https://www.naludamagazine.com/interview-with-1111-founder-and-entrepreneur-jesse-waits/" class="read-more-link">Read More</a>
+      </div>
+      <div class="article-col-image">
+        <img src="img/team/jesse1.jpg" alt="Article Image 1">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Article Section 2 -->
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="article-row">
+      <div class="article-col-title">
+        Article
+      </div>
+      <div class="article-col-content">
+        <div class="section-title">A Vision for the Future</div>
+        <p>DDW Sits Down With Top Vegas Nightlife Mogul Jesse Waits.....</p>
+        <a href="https://www.dontdiewondering.com/ddw-sits-down-with-top-vegas-nightlife-mogul-jesse-waits/" class="read-more-link">Read More</a>
+      </div>
+      <div class="article-col-image">
+        <img src="img/team/jesse2.jpg" alt="Article Image 2">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Video Section -->
+<section class="section-padding bg-white">
+  <div class="container">
+    <div class="row mb-30">
+      <div class="col-md-3">
+        <div class="sub-title border-bot-light">Video</div>
+      </div>
+      <div class="col-md-9">
+        <div class="section-title">Watch the Story</div>
+        <video id="jesse-video" width="100%" height="auto" controls style="max-width: 600px;">
+          <source src="img/team/jesse4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p style="margin-top:10px; color:#888; font-size:0.95em;">Use the controls to play, pause, adjust volume, or view fullscreen. Replace the video source as needed.</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Main Content Placeholder -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-3 mb-30">
+                        <div class="sub-title border-footer-light whte">Contact Us!</div>
+                    </div>
+    
+                    
+                    <div class="col-md-3">
+                        <div class="item">
+                            <h3>Get in touch</h3>
+                            <p>Jl. Labuansait Dinas Labuansait, Pecatu<br>
+                               Kec. Kuta Sel., Bali, 80362.
+                            </p>
+                            <p class="phone">+62 821 4608 3360</p>
+                            <p class="mail">hello@theparalian.com</p>
+                            <div class="social mt-2 d-flex align-items-center">
+                                <a href="https://www.facebook.com/share/1CSH5pnNQp/?mibextid=wwXIfr"><i class="ti-facebook"></i></a>
+                                <a href="https://www.tiktok.com/@paralian.uluwatu"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/paralian.uluwatu/?hl=en"><i class="ti-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/the-paralian-uluwatu"><i class="ti-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="item">
+                            <h3>Our Projects</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="11-11bali.html">11-11 Bali</a></li>
+                                <li><a href="waitsestate.html">Waits Estate Villas</a></li>
+                                <li><a href="Grand-Waits-Estate.html">Grand Waits Estate Villa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="item">
+                            <h3>Office Hours</h3>
+                            <p>10:00 a.m - 5:00 p.m<br>Monday - Friday</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <p>© 2025 THE PARALIAN. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <p class="right">
+                            <a href="privacy-policy.html">Privacy Policy</a> |
+                            <a href="terms-of-service.html">Terms of Service</a> |
+                            <a href="cookies.html">Cookies</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+<!-- Mirrored from duruthemes.com/demo/html/patara/multipage-light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jun 2025 07:31:30 GMT -->
+</html>
